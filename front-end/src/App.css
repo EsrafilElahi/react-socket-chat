@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Rancho&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rancho", cursive !important;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.nav {
+  padding-top: 3em;
+}
+
+.select {
+  margin: 0.5em 0 2em 0;
+  width: 14em;
+  padding: 0.5em;
+  outline: none;
+  border: 2px solid rgb(2, 245, 333);
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  appearance: none;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5em;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  background-image: linear-gradient(
+    45deg,
+    rgba(0, 140, 255, 0.96),
+    rgba(0, 255, 234, 0.74)
+  );
+  height: 100vh;
+  font-family: "Mate SC", serif;
+}
+
+.title {
+  color: rgba(112, 3, 214, 0.822);
+  height: 100px;
+  padding: 20px;
+  font-size: 40px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  border: 3px solid rgb(7, 232, 240);
+  max-width: 70%;
+  width: 45rem;
+  height: 30em;
+}
+
+.user-div {
+  padding: 7px;
+}
+
+label {
+  font-size: 19px;
+  color: blue;
+  font-weight: 300;
+}
+
+input {
+  padding: 1.3em 0.7em;
+  margin: 10px;
+  outline: none;
+  border: 2px solid rgb(2, 245, 233);
+  border-radius: 5px;
+  width: 17em;
+  height: 25px;
+  transition: 0.5s ease-out;
+}
+
+.checkbox {
+  width: 15px;
+  height: 15px;
+}
+
+.email-div {
+  padding: 8px;
+}
+
+.password-div {
+  padding: 7px;
+}
+
+.policy-div {
+  padding: 7px;
+}
+
+.have-account-div {
+  padding: 7px;
+}
+
+.btn {
+  margin-bottom: 0.4em;
+  padding: 5px;
+  width: 120px;
+  font-size: 19px;
+  height: 43px;
+  color: blue;
+  border-radius: 10px;
+  border: 2px solid rgb(2, 245, 233);
+  cursor: pointer;
+  transition: 0.5s ease-out;
+  background-color: rgba(2, 245, 233, 0.521);
+  font-family: "Mate SC", serif;
+}
+
+.btn:hover {
+  background-color: rgba(2, 245, 233, 0.822);
+}
+
+a {
+  cursor: pointer;
+  color: rgba(112, 3, 214, 0.822);
+  transition: 0.5s ease-out;
+}
+
+a:hover {
+  color: rgba(132, 6, 182, 0.822);
+}
+
+.container_container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat_container {
+  width: 60%;
+  height: 33em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  background: #e32787;
+  border-radius: 1em;
+  overflow: auto;
+}
+
+.message_div {
+  margin: 0.7em 0;
+  display: flex;
+  align-items: stretch;
+}
+
+.message_div_reverse {
+  direction: rtl;
+  margin: 0.7em 0;
+  display: flex;
+  align-items: stretch;
+}
+
+.message_span {
+  margin: 0.3em 0.5em;
+  background: rgb(98 235 102);
+  padding: 0.5em;
+  border-radius: 0.5em;
+  min-width: 25%;
+  max-width: 75%;
+  display: inline-block;
+  font-size: 15px;
+  direction: rtl;
+  overflow-wrap: break-word;
+  text-align: justify;
+  text-transform: inherit !important;
+}
+
+.message_span_reverse {
+  margin: 0.3em 0.5em;
+  background: rgb(235, 203, 98);
+  padding: 0.5em;
+  border-radius: 0.5em;
+  overflow-wrap: break-word;
+  text-align: justify;
+  min-width: 25%;
+  max-width: 75%;
+  font-size: 15px;
+  display: inline-block;
+  direction: rtl;
+  text-transform: inherit !important;
+}
+
+.message_div:nth-last-child(2) {
+  margin-bottom: 3.5em !important;
+}
+
+.message_div_reverse:nth-last-child(2) {
+  margin-bottom: 3.5em !important;
+}
+
+.img_profile {
+  width: 1.7em;
+  height: 1.9em;
+  border-radius: 50%;
+}
+
+.message_date_msg {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 0.15em;
+}
+
+.message_info {
+  display: flex;
+  margin-bottom: 0.4em;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  font-size: 13.5px;
+}
+
+.message_info span {
+  /* margin-left: 0.4em; */
+  margin: 0 auto;
+  font-size: 16px;
+  margin-bottom: 0.5em;
+}
+
+.date {
+  margin-left: 0.8em;
+  font-size: 13px !important;
+}
+
+.date_reverse {
+  margin-right: 0.8em;
+  font-size: 13px !important;
+}
+
+.message_info_reverse {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  font-size: 13.5px;
+  display: flex;
+}
+
+.message_info_reverse span {
+  margin: 0 auto;
+}
+
+.chat_box {
+  padding-right: 1em !important;
+  position: absolute;
+  bottom: 4.5em !important;
+  text-align: center;
+  width: inherit !important;
+}
+
+.input_chat {
+  width: 60%;
+  font-size: 15px !important;
+  margin-left: -1em;
+}
+
+.btn_send {
+  padding: 0.75em 1.5em;
+  background: #00ffffc4;
+  outline: none;
+  border: none;
+  border: 1px solid rgb(247, 0, 255);
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: background 0.1s ease;
+}
+
+.btn_send:hover {
+  background: #00ffffe7;
+}
+
+.delete_icon {
+  color: #e32788c2;
+  cursor: pointer;
+  margin-left: 0.5em;
+  margin-bottom: 0.2em;
+  vertical-align: middle;
+  transition: color 0.2s ease;
+}
+
+.delete_icon:hover {
+  color: #e32787;
+}
+
+.delete_icon_reverse {
+  color: #e32788c2;
+  cursor: pointer;
+  margin-left: 0.5em;
+  margin-bottom: 0.2em;
+  vertical-align: middle;
+  display: none !important;
+  transition: color 0.2s ease;
+}
+
+.delete_icon_reverse:hover {
+  color: #e32787 !important;
+}
+
+.hr {
+  border-bottom: 1px solid #f0499f;
+  width: 17em;
+  margin-top: 3em;
+  margin-bottom: -4.8em;
+  display: none;
+}
+
+/* medi query */
+/* xs */
+@media screen and (max-width: 720px) {
+  form {
+    padding: 62px 16px;
+    max-width: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    border: none !important;
+  }
+  .hr{
+    display: flex;
+  }
+}
+
